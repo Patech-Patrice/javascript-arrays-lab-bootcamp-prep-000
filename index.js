@@ -22,8 +22,10 @@ function appendKitten(name){
 function prependKitten(name){
 }
 function removeLastKitten(){
-  
-}
+  var newKittens = [...kittens];
+  newKittens.pop();
+  return newKittens;
+  }
 function removeFirstKitten(){
   var newKittens = [...kittens];
   newKittens.shift();
