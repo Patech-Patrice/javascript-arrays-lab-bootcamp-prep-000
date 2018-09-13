@@ -16,10 +16,15 @@ function destructivelyRemoveFirstKitten(){
   kittens.shift();
   return kittens;
 }
-function appendKitten(name){
-  
+
+function appendKitten(name) {
+  var newArr = kittens.slice();
+  newArr.push(name);
+  return newArr;
 }
+
 function prependKitten(name){
+  var 
 }
 function removeLastKitten(){
   var newKittens = [...kittens];
