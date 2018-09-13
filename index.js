@@ -24,7 +24,9 @@ function appendKitten(name) {
 }
 
 function prependKitten(name){
-  var 
+   var newArr = kittens.slice();
+  newArr.unshift(name);
+  return newArr;
 }
 function removeLastKitten(){
   var newKittens = [...kittens];
